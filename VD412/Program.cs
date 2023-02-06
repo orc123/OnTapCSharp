@@ -5,15 +5,16 @@ public class Program
     static void Main(string[] args)
     {
         Console.WriteLine("This year: {0}", Time.Year.ToString());
-        Time.Year = 2023;
+        Time.Year = 2024;
         Console.WriteLine("This year: {0}", Time.Year.ToString());
     }
 }
 
-public class Time
+public  class Time
 {
-    public Time(DateTime dateTime)
+    static Time()
     {
+        DateTime dateTime = DateTime.Now;
         Year = dateTime.Year;
         Month = dateTime.Month;
         Date = dateTime.Day;
