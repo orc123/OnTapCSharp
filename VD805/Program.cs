@@ -1,6 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-
-namespace VD805;
+﻿namespace VD805;
 
 public class Program
 {
